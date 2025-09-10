@@ -1,0 +1,11 @@
+name: "hello to main branch"
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello to develop branch"
+        run: echo "Hello to main branch"
